@@ -3,11 +3,15 @@
   <title>웹사이트</title>
   <style>
     *{box-sizing:border-box; margin:0; padding:0}
+    a {text-decoration: none}
     header{ background-color: #666; padding: 30px; text-align: center; font-size: 35px; color: white;}
-    section {float: left;  padding: 20px;  width: 70%; background-color: #fff; }
-    aside {float: left;  padding: 20px;  width: 20%; background-color: #f1f1f1; }
-    aside nav li a{display:block; color:#333 !important;}
-    main:after{content:""; display:block; clear: both;}
+    header a{color:#fff;}
+    header a:after{content:" | "}
+    header a:last-child:after{content:""}
+    main{display:flex;}
+    section {padding: 20px;  width: 70%; background-color: #fff; }
+    aside {padding: 20px;  width: 20%; background-color: #f1f1f1; }
+    aside a{display:block}
     footer{background-color: #777; padding: 20px; text-align: center; color: white;}
   </style>
 </head>

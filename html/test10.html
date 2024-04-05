@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>폼태그 연습</title>
+  </head>
+  <body>
+    <h2>회원가입</h2>
+    <form name="" method="" action="">
+      <div>
+        <label for="name">성명 : </label>
+        <input type="text" name="name" id="name" maxlength="3" size="5"/>
+      </div>
+      <div>
+        <label for="age">나이 : </label>
+        <input type="number" name="age" id="age" min="1" max="100"/>
+      </div>
+      <div>
+        <label for="nickName">닉네임 : </label>
+        <input type="text" name="nickName" id="nickName" size="10" value="닉네임" readonly/>
+      </div>
+      <div>
+        <label for="pwd">비밀번호 : </label>
+        <input type="password" name="pwd" id="pwd" maxlength="10"/>
+      </div>
+      <div>
+        <label for="search">검색어 : </label>
+        <input type="search" name="search" id="search" />
+      </div>
+      <div>
+        <label for="email">이메일 : </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="tel">연락처 : </label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div>
+        <label for="gender">성별 : </label>
+        <input type="radio" name="gender" id="gender1" /> 남자
+        <input type="radio" name="gender" id="gender2" checked/> 여자
+      </div>
+      <div>
+        <label for="card">카드 : </label>
+        <input type="checkbox" name="card" id="card1" /> 삼성카드
+        <input type="checkbox" name="card" id="card2" checked/> BC카드
+        <input type="checkbox" name="card" id="card3" /> 신한카드
+        <input type="checkbox" name="card" id="card4" /> 국민카드
+        <input type="checkbox" name="card" id="card5" /> 엘지카드
+        <input type="checkbox" name="card" id="card6" checked/> 롯데카드
+      </div>
+      <div>
+        <label for="job">직업 : </label>
+        <select name="job" id="job">
+          <option>선택</option>
+          <option>학생</option>
+          <option>회사원</option>
+          <option>군인</option>
+          <option>의사</option>
+          <option>기타</option>
+        </select>
+      </div>
+      <div>
+        <label for="job">좋아하는 음식 : </label>
+        <select name="food" id="food" size="5" multiple>
+          <option>짜장면</option>
+          <option>돈까스</option>
+          <option>국수</option>
+          <option>만두</option>
+          <option>피자</option>
+          <option>사탕</option>
+          <option>초콜릿</option>
+          <option>커피</option>
+        </select>
+      </div>
+      <div>
+        <label for="content">자기소개</label>
+        <textarea name="content" rows="5" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="file">파일첨부</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div>
+        <label for="range">주문수량</label>
+        <input type="range" name="su" id="su" min="1" max="10" value="5">
+      </div>
+      <div>
+        <lable for="range2">주문수량2</label>
+        <input type="number" name="su2" id="su2" step="5" min="0" max="20" value="0">
+      </div>
+      <div>
+        작업진행상태: <progress value="30" max="100"></progress>
+      </div>
+      <p>
+        사용량(트래픽스):
+        <meter value="650" low="200" high="800" min="100" max="1000"></meter>
+      </p>
+      <p>
+        그린대학교
+        <select name="school" id="school">
+          <optgroup label="공과대학">
+            <option>기계공학과</option>
+            <option>전기공학과</option>
+            <option>전자공학과</option>
+            <option>토목공학과</option>
+            <option>반도체공학과</option>
+          </optgroup>
+          <optgroup label="기타">
+            <option>경상학부</option>
+            <option>행정학부</option>
+            <option>물리학과</option>
+            <option>수학과</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        대학명 :
+        <input type="text" name="ac" id="ac" list="choices" required />
+        <datalist id="choices">
+          <option>서울대학교</option>
+          <option>고려대학교</option>
+          <option>연세대학교</option>
+          <option>충북대학교</option>
+          <option>서강대학교</option>
+          <option>청주대학교</option>
+          <option>울산대학교</option>
+        </datalist>      
+      </p>
+    </form>
+  </body>
+</html>

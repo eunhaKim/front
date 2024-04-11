@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test4.html</title>
+  <script>
+    'use strict';
+    function atom1(){
+      alert("atom1 : 안녕하세요");
+    }
+    function atom4(su){
+      alert("su : " + su);
+    }
+    function atom5(su,str){
+      alert("atom5 \n\nsu : " + su + " , str : " + str);
+    }
+    function atom6(){
+      let su = 2000;
+      let str = "반갑습니다";
+      alert("atom6 \nsu : " + su + " , str : " + str);
+      atom5(su,str);
+    }
+  </script>
+</head>
+<body>
+  <h2>이곳은 본문</h2>
+
+  <input type="button" onclick="atom1()" value="atom1"/>
+  <!-- <input type="button" onclick="atom2()" value="atom2"/> -->
+  <button type="button" onclick="atom2()">atom2 호출</button>
+  <button type="button" onclick="atom3()">atom3 호출</button>
+  <button type="button" onclick="atom4(500)">atom4 호출</button>
+  <button type="button" onclick="atom5(500,'안녕')">atom5 호출</button>
+  <button type="button" onclick="atom6()">atom6 호출</button>
+  
+  <script>
+    function atom2(){
+      // document.write("<p>atom2 : 안녕하세요333</p>");
+      alert("atom2 : 안녕하세요");
+    }
+    function atom3(){
+      atom1();
+      atom2();
+      alert("작업종료");
+    }
+  </script>
+</body>
+</html>

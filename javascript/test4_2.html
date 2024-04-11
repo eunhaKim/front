@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test4.html</title>
+  <script>
+    document.write("안녕!!!<br />");
+    atom1();
+
+    function atom1(){
+      // document.write("atom1 : 안녕하세요222");
+      alert("atom1 : 안녕하세요");
+    }
+    // atom1();
+    // atom2();
+  </script>
+</head>
+<body>
+  <h2>이곳은 본문</h2>
+
+  <input type="button" onclick="atom1()" value="atom1"/>
+  <!-- <input type="button" onclick="atom2()" value="atom2"/> -->
+  <button type="button" onclick="atom2()">atom2 호출</button>
+  
+  <script>
+    function atom2(){
+      // document.write("<p>atom2 : 안녕하세요333</p>");
+      alert("atom2 : 안녕하세요");
+    }
+  </script>
+</body>
+</html>

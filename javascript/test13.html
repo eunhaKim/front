@@ -24,7 +24,7 @@
       if(document.getElementById("card5").checked) card+=document.getElementById("card5").value + " / ";
       if(document.getElementById("card6").checked) card+=document.getElementById("card6").value + " / ";
 
-      let res = "<h2 class='text-center mb-5'>전송되는값</h2>";
+      let res = "<h2 class='text-center m-5'>전송되는값</h2>";
       res += "성별 : <font color=red>" + gender + "</font><br>";
       res += "소지한 카드 : <font color=red>" + card.substring(0,card.length-3) + "</font><br/>";
       
@@ -53,7 +53,7 @@
 </head>
 <body>
   <div>
-    <h2>회원가입</h2>
+    <h2 class="text-center m-5">회원가입</h2>
     <table class="table">
       <tr>
         <th>성 별</th>
